@@ -1,0 +1,69 @@
+docker used commnads
+
+sudo docker build  -t my-first-docker:0.1 .
+- build - utwórz obraz docker
+- t -  działaj w tle 
+<nazwa-kontenera:wersja>
+. - sciezka skąd ma być utworzony Docker image _lokalziacja dockfile 
+
+
+sudo docker ps -l
+
+sudo docker run --interactive --tty  a1eee9bafc94 bash
+
+
+# To docker push to docker HUB
+
+Bez dodania tagu, nie chciało zrobić "Docker push"
+
+
+#utworzenie z dockerfile 
+sudo docker build --tag my-conteiner:latest .
+
+#Lista obrazow Docker
+sudo docker image ls
+
+#uruchnienie dockera 
+
+sudo docker run -it my-conteiner:latest
+
+przed PUSH trzeba dodać tag !!!
+
+
+sudo docker tag my-conteiner asidor23/my-conteiner:latest
+
+sudo docker login 
+
+
+sudo docker image push asidor23/my-conteiner:latest
+
+#manage resources
+
+
+docker context 
+# copy to remote 
+docker  sudo cp  src dest 
+
+docker logs 
+
+docker logs remote-macg 2>&1 | grep _f _E 'error'
+
+docker logs remote-macg 2>&1 | grep _f _E 'error.*middlerware'
+docker logs remote-macg 2>&1 | grep _f _E '2024"
+
+
+docker exec -it container  sh   
+
+
+https://docs.docker.com/reference/cli/docker/
+https://docs.docker.com/get-started/workshop/02_our_app/
+
+
+
+
+
+
+
+
+
+
